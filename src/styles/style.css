@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Bangla', sans-serif;
+    text-transform:uppercase;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/jogo_blur_dark.png");
+    background-repeat: no-repeat;
+    /* background-color: #A6E093; */
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 21px 33px 14px 0px rgba(0,0,0,0.3);
+    border-radius: 18px;
+}
+
+.form-img {
+    width: 50%;
+    height: 79vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.form-img > img {
+    height: 81.3vh;
+    width: 34rem;
+    /* margin-left: 10px; */
+    
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: brightness(0.5);
+    border-radius: 20px;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    text-decoration: none;
+    border: none;
+    background-color: #A3CB82;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover{
+    background: #7ea161;
+    /* width: 300px;
+    height: 150px;
+    margin: 20px auto; */
+    transition: 500ms linear; 
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #516541;
+}
+
+.form-header h1 {
+    margin-right: 100px;
+    color: #A3CB82;
+}
+
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #A3CB82;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    /* padding: 1rem 0rem 0rem 0rem; */
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    color: #A3CB82;
+    /* margin-bottom: rem; */
+}
+
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0px #0000001c
+}
+
+.input-box input:hover{
+    background-color: #dad7d7;
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid #000000
+}
+
+@media screen and (max-width: 1250px) {
+    .form-img {
+        display: none;
+    }
+
+    .container{
+        width: 50%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container{
+        width: 90%;
+        height: auto;
+    }
+}
